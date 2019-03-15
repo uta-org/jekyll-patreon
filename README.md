@@ -9,6 +9,8 @@ Requires Ruby 2.3+ and Jekyll +3.0
 * Supports several designs: default, fancy, minimal, streamlined, reversed, swapped
 * Supports several colors: red, green, orange, red nostripes, green nostripes, orange nostripes, blue nostripes
 
+> To see the possible styles && designs navigate to the assets folder where the screenshots are located
+
 ## Installation
 
 Add this line to your site's Gemfile:
@@ -33,17 +35,14 @@ patreon:
     bottomtext: 'Example bottom text' # Text that appears in after the progress bar (optional)
     showgoaltext: true # Display the goal text?
     showbutton: true # Display the "Become a patron" button?
+    username: 'Your username here'
 ```
 
 ## Usage
 
 Simply just put the following tag where you need this:
 
-`{% patreon username %}`
-
-**Example:** (In my case)
-
-`{% patreon z3nth10n %}`
+`{% patreon %}`
 
 ## Issues
 
@@ -59,11 +58,9 @@ Become a patron, by simply clicking on this button (**very appreciated!**):
 
 [![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/z3nth10n)
 
-... Or if you prefer a one-time donation:
+... Or if you prefer an one-time donation:
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/z3nth10n)
-
-**THANKS TO ALL DONATORS!!**
 
 ## Copyright
 

@@ -10,7 +10,8 @@ module Jekyll
       'toptext'      => "", # Text that appears in before the progress bar
       'bottomtext'   => "", # Text that appears in after the progress bar
       'showgoaltext' => true,
-      'showbutton'   => false
+      'showbutton'   => false,
+      'username'     => 'z3nth10n'
     }
 
   end # module Patreon
