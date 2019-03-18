@@ -11,7 +11,7 @@ Requires Ruby 2.5+ and Jekyll 3.8+
 * Supports i18n (compatible with [jekyll-language-plugin](https://github.com/vwochnik/jekyll-language-plugin))
 * Supports Markdown on your Patreon goals
 
-> To see the possible styles && designs navigate to the assets folder where the screenshots are located
+> To see the possible styles && designs navigate to the [assets folder](/assets/) where the screenshots are located
 
 ## Installation
 
