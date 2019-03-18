@@ -1,6 +1,6 @@
 # jekyll-patreon [![Build Status](https://travis-ci.org/uta-org/jekyll-patreon.svg?branch=master)](https://travis-ci.org/uta-org/jekyll-patreon) [![Gem Version](https://badge.fury.io/rb/jekyll-patreon.svg)](http://badge.fury.io/rb/jekyll-patreon)
 
-Requires Ruby 2.3+ and Jekyll +3.0
+Requires Ruby 2.5+ and Jekyll 3.8+
 
 > A Jekyll plugins that adds Patreon support in your blog to easily embed a widget with goals
 
@@ -8,6 +8,8 @@ Requires Ruby 2.3+ and Jekyll +3.0
 
 * Supports several designs: default, fancy, minimal, streamlined, reversed, swapped
 * Supports several colors: red, green, orange, red nostripes, green nostripes, orange nostripes, blue nostripes
+* Supports i18n (compatible with [jekyll-language-plugin](https://github.com/vwochnik/jekyll-language-plugin))
+* Supports Markdown on your Patreon goals
 
 > To see the possible styles && designs navigate to the assets folder where the screenshots are located
 
@@ -36,6 +38,7 @@ patreon:
     showgoaltext: true # Display the goal text?
     showbutton: true # Display the "Become a patron" button?
     username: 'Your username here'
+    default_lang: "en" # The default language to use (to avoid writing twice the same text from Patreon)
 ```
 
 ## Usage
@@ -43,6 +46,49 @@ patreon:
 Simply just put the following tag where you need this:
 
 `{% patreon %}`
+
+### i18n
+
+To support languages just use [jekyll-language-plugin](https://github.com/vwochnik/jekyll-language-plugin) configuration. Or if you don't use it, do the following steps.
+
+First, in your main index.html (or wherever you need the i18n support) declare the following lines:
+
+```yaml
+---
+layout: <layout>
+language: en
+---
+```
+
+Or if you want to support several languages in the same page:
+
+```yaml
+---
+layout: <layout>
+languages:
+- en
+- es
+---
+```
+
+Then, in "_data/lang/" create one file for each lang.
+
+> Example: `en.yml` and `es.yml`. 
+
+Then, put the translations of you goals like this:
+
+```yaml
+#################
+# Patreon Goals #
+#################
+
+patreon_goal_0: "..."
+patreon_goal_1: "..."
+patreon_goal_2: "..."
+# etc etc...
+```
+
+There you will need to create as much translations as your Patreon page has. (**Note:** starting index is 0 (zero))
 
 ## Issues
 

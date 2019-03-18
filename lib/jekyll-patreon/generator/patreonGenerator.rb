@@ -54,7 +54,7 @@ module Jekyll
             
         # Jekyll.logger.info "Patreon lang:",@config['lang']
 
-        @@json = Net::HTTP.get_response(URI.parse("#{PatreonUserAPIURL}#{@@PatreonID}")).body.force_encoding('UTF-8').escape_json
+        @@json = Net::HTTP.get_response(URI.parse("#{PatreonUserAPIURL}#{@@PatreonID}")).body.force_encoding('UTF-8')
         infoSpended(start)
       end
         

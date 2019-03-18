@@ -11,7 +11,8 @@ module Jekyll
       'bottomtext'   => "", # Text that appears in after the progress bar
       'showgoaltext' => true,
       'showbutton'   => false,
-      'username'     => 'z3nth10n'
+      'username'     => 'z3nth10n',
+      'default_lang' => "en"
     }
 
   end # module Patreon
