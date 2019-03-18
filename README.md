@@ -88,7 +88,7 @@ patreon_goal_2: "..."
 # etc etc...
 ```
 
-There you will need to create as much translations as your Patreon page has. (**Note:** starting index is 0 (zero))
+There you will need to create as much translations as the number of goals that your Patreon page have. (**Note:** starting index is 0 (zero))
 
 ## Issues
 
