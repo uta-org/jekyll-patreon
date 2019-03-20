@@ -2,7 +2,7 @@
 
 Requires Ruby 2.5+ and Jekyll 3.8+
 
-> A Jekyll plugins that adds Patreon support in your blog to easily embed a widget with goals
+> A Jekyll plugin that adds Patreon support in your blog to easily embed a widget with goals
 
 ## Features 
 
@@ -75,7 +75,7 @@ Then, in "_data/lang/" create one file for each lang.
 
 > Example: `en.yml` and `es.yml`. 
 
-Then, put the translations of you goals like this:
+Then, write the translations of you goals like this:
 
 ```yaml
 #################

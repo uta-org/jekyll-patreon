@@ -92,7 +92,7 @@ module Jekyll
                   raiseError()
               end
 
-              return Integer(patreon_id)
+              return patreon_id.to_i
           end
 
           return -1
