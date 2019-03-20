@@ -40,8 +40,10 @@ module Jekyll
             
           @language = Jekyll::Patreon.get_language(context)
             
-          if @language.to_s.empty? and @confDefLang.to_s.empty
-             @language = "en" 
+          if @language.to_s.empty? and !@confDefLang.to_s.empty?
+             @language = @confDefLang.to_s
+          elsif @language.to_s.empty? and @confDefLang.to_s.empty?
+             @language = "en"
           end
 
           trFile = File.expand_path(File.join('..', '..', 'langs', "#{@language}.yml"), __FILE__)
