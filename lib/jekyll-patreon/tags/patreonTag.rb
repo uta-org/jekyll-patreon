@@ -29,11 +29,17 @@ module Jekyll
             
           @username = @config["username"]
           @confDefLang = @config["default_lang"]
-          @PatreonID = Jekyll::Patreon::Generator::PatreonGenerator.getPatreonID
+          @PatreonID = Jekyll::Patreon::Generator::PatreonGenerator.getPatreonID # TODO: Update this
           @json = Jekyll::Patreon::Generator::PatreonGenerator.getJSON
         end
 
         def render(context)
+
+          # TODO: Fix this
+          if @PatreonID == -1
+            return
+          end
+
           unless @config['enabled']
              return 
           end
